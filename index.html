@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ruhail Nazir Malik | AI Portfolio</title>
+    <title>Ruhail Nazir Malik | Portfolio</title>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial;
+            font-family: 'Poppins', sans-serif;
             color: white;
         }
 
@@ -18,36 +21,44 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            background: #0a192f;
+            background: linear-gradient(120deg, #0a192f, #112240);
             z-index: -1;
         }
 
         header {
             text-align: center;
-            padding: 50px;
+            padding: 60px 20px;
         }
 
         h1 {
-            font-size: 42px;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #00adb5;
         }
 
         section {
-            width: 80%;
-            margin: 20px auto;
+            width: 75%;
+            margin: 25px auto;
             padding: 25px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 12px;
-            backdrop-filter: blur(12px);
+            background: rgba(255,255,255,0.08);
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
             transition: 0.3s;
         }
 
         section:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
         }
 
         h2 {
-            border-bottom: 2px solid #00adb5;
-            padding-bottom: 5px;
+            border-left: 5px solid #00adb5;
+            padding-left: 10px;
+            margin-bottom: 15px;
         }
 
         .btn {
@@ -57,16 +68,21 @@
             background: #00adb5;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
             transition: 0.3s;
         }
 
         .btn:hover {
-            background: #007b83;
+            background: #008b92;
+            transform: scale(1.05);
         }
 
         .icon {
             margin-right: 8px;
+        }
+
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -77,12 +93,11 @@
 
 <header>
     <h1>Ruhail Nazir Malik</h1>
-    <p>AI & Deep Learning Enthusiast</p>
+    <p>AI Engineer | Deep Learning | Computer Vision</p>
 </header>
 
 <section>
     <h2><i class="fas fa-user icon"></i>Personal Details</h2>
-    <p><b>Name:</b> Ruhail Nazir Malik</p>
     <p><b>Email:</b> xmnroute954@gmail.com</p>
     <p><b>Contact:</b> 7006021486</p>
     <p><b>Location:</b> India</p>
@@ -91,13 +106,13 @@
 <section>
     <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
 
-    <p><b>Master of Technology (M.Tech) in Computer Science & Engineering</b></p>
+    <p><b>M.Tech in Computer Science & Engineering</b></p>
     <p>University of Kashmir | 2023 – 2025</p>
 
     <br>
 
-    <p><b>Bachelor of Technology (B.Tech) in Computer Science</b></p>
-    <p>IK Gujral Punjab Technical University | Completed: 2022</p>
+    <p><b>B.Tech in Computer Science</b></p>
+    <p>IK Gujral Punjab Technical University | 2022</p>
 
 </section>
 
@@ -109,7 +124,7 @@
 
     <br><br>
 
-    <p><b>Diabetic Retinopathy Detection:</b> EfficientNet-based classification model.</p>
+    <p><b>Diabetic Retinopathy Detection:</b> EfficientNet-based model.</p>
     <a href="#" class="btn">View Project</a>
 
 </section>
@@ -122,7 +137,7 @@
 <script>
 particlesJS("particles-js", {
   "particles": {
-    "number": { "value": 90 },
+    "number": { "value": 80 },
     "size": { "value": 3 },
     "move": { "speed": 2 },
     "line_linked": { "enable": true }
