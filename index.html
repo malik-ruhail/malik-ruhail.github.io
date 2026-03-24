@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ruhail Malik | Portfolio</title>
+    <title>Ruhail Malik | AI Portfolio</title>
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
         body {
@@ -21,39 +25,49 @@
 
         header {
             text-align: center;
-            padding: 40px;
+            padding: 50px;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 42px;
         }
 
         section {
             width: 80%;
             margin: 20px auto;
-            padding: 20px;
+            padding: 25px;
             background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            backdrop-filter: blur(12px);
+            transition: 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.02);
         }
 
         h2 {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid #00adb5;
             padding-bottom: 5px;
         }
 
         .btn {
             display: inline-block;
-            padding: 8px 15px;
-            margin-top: 5px;
+            padding: 10px 18px;
+            margin-top: 10px;
             background: #00adb5;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
+            transition: 0.3s;
         }
 
         .btn:hover {
             background: #007b83;
+        }
+
+        .icon {
+            margin-right: 8px;
         }
     </style>
 </head>
@@ -68,20 +82,20 @@
 </header>
 
 <section>
-    <h2>Personal Details</h2>
+    <h2><i class="fas fa-user icon"></i>Personal Details</h2>
     <p><b>Name:</b> Ruhail Malik</p>
     <p><b>Email:</b> your-email@example.com</p>
     <p><b>Location:</b> India</p>
 </section>
 
 <section>
-    <h2>Education</h2>
+    <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
     <p>Bachelor’s / Master’s in Artificial Intelligence / Computer Science</p>
     <p>(Add your college name and year)</p>
 </section>
 
 <section>
-    <h2>Projects</h2>
+    <h2><i class="fas fa-code icon"></i>Projects</h2>
 
     <p><b>Brain Tumor Detection:</b> Deep learning model using MRI images.</p>
     <a href="#" class="btn">View Project</a>
@@ -94,14 +108,14 @@
 </section>
 
 <section>
-    <h2>Skills</h2>
+    <h2><i class="fas fa-laptop-code icon"></i>Skills</h2>
     <p>Python | TensorFlow | Keras | OpenCV | Deep Learning</p>
 </section>
 
 <script>
 particlesJS("particles-js", {
   "particles": {
-    "number": { "value": 80 },
+    "number": { "value": 90 },
     "size": { "value": 3 },
     "move": { "speed": 2 },
     "line_linked": { "enable": true }
