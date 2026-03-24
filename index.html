@@ -2,34 +2,47 @@
 <html>
 <head>
     <title>Ruhail Malik | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
     <style>
         body {
-            font-family: Arial;
             margin: 0;
-            background-color: #f5f7fa;
-        }
-        header {
-            background: #0a192f;
+            font-family: Arial;
             color: white;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: #0a192f;
+            z-index: -1;
+        }
+
+        header {
             text-align: center;
-            padding: 30px;
+            padding: 40px;
         }
+
         section {
-            margin: 20px;
+            width: 80%;
+            margin: 20px auto;
             padding: 20px;
-            background: white;
+            background: rgba(255,255,255,0.1);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
         }
+
         h2 {
-            color: #0a192f;
-        }
-        .project {
-            margin-bottom: 15px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
         }
     </style>
 </head>
+
 <body>
+
+<div id="particles-js"></div>
 
 <header>
     <h1>Ruhail Malik</h1>
@@ -37,23 +50,22 @@
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <p>I am an AI/ML student passionate about Deep Learning and Computer Vision. I have worked on medical imaging projects like brain tumor detection and diabetic retinopathy detection.</p>
+    <h2>Personal Details</h2>
+    <p><b>Name:</b> Ruhail Malik</p>
+    <p><b>Email:</b> your-email@example.com</p>
+    <p><b>Location:</b> India</p>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <p>Bachelor’s / Master’s in Artificial Intelligence / Computer Science</p>
+    <p>(Add your college name and year here)</p>
 </section>
 
 <section>
     <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Brain Tumor Detection</h3>
-        <p>Developed CNN models (VGG16, ResNet50) to detect tumors from MRI images.</p>
-    </div>
-
-    <div class="project">
-        <h3>Diabetic Retinopathy Detection</h3>
-        <p>Built an EfficientNetB1 model for classification of retinal images.</p>
-    </div>
-
+    <p><b>Brain Tumor Detection:</b> Deep learning model using MRI images.</p>
+    <p><b>Diabetic Retinopathy Detection:</b> EfficientNet-based classification model.</p>
 </section>
 
 <section>
@@ -61,11 +73,16 @@
     <p>Python | TensorFlow | Keras | OpenCV | Deep Learning</p>
 </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: https://github.com/malik-ruhail</p>
-</section>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 80 },
+    "size": { "value": 3 },
+    "move": { "speed": 2 },
+    "line_linked": { "enable": true }
+  }
+});
+</script>
 
 </body>
 </html>
