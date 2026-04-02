@@ -3,8 +3,10 @@
 <head>
     <title>Ruhail Nazir Malik | Portfolio</title>
 
+    <!-- Particle Background -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Google Font -->
@@ -21,8 +23,16 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            background: linear-gradient(120deg, #0a192f, #112240);
+            background: linear-gradient(270deg, #0a192f, #1f4068, #0f3460);
+            background-size: 600% 600%;
+            animation: gradientBG 10s ease infinite;
             z-index: -1;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         header {
@@ -38,6 +48,21 @@
         header p {
             font-size: 18px;
             color: #00adb5;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-top: 15px;
+            border: 4px solid #00adb5;
+            object-fit: cover;
+            box-shadow: 0 0 20px #00adb5;
+            transition: 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
         }
 
         section {
@@ -94,6 +119,9 @@
 <header>
     <h1>Ruhail Nazir Malik</h1>
     <p>AI Engineer | Deep Learning | Computer Vision</p>
+
+    <!-- Profile Image -->
+    <img src="https://github.com/malik-ruhail.png" class="profile-pic">
 </header>
 
 <section>
@@ -137,7 +165,7 @@
 <script>
 particlesJS("particles-js", {
   "particles": {
-    "number": { "value": 80 },
+    "number": { "value": 100 },
     "size": { "value": 3 },
     "move": { "speed": 2 },
     "line_linked": { "enable": true }
